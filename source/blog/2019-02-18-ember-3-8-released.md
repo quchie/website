@@ -1,6 +1,6 @@
 ---
 title: Ember 3.8 Released
-author: Melanie Sumner, Kenneth Larsen
+author: Melanie Sumner, Kenneth Larsen, Anne-Greeth van Herwijnen
 tags: Releases, 2018, 3, 3.8
 responsive: true
 ---
@@ -31,8 +31,14 @@ A modifier manager is an object that is responsible for coordinating the lifecyc
 
 If you're interested in learning more about how to use this new feature, then please refer to the [RFC](https://github.com/emberjs/rfcs/blob/master/text/0373-Element-Modifier-Managers.md).
 
-Second new feature (2 of 2)
+Array helper (2 of 2)
 
+
+Ember 3.8 introduces the `{{array}}` helper to create an array in a template. This helper works in similar fashion to the already existing `{{hash}}` helper.
+
+The helper would be invoked as `{{array arg1 ... argN}}` and return the value `[arg1, ..., argN]`. For example, `{{array 'a' 'b' 'c'}}` would return the value `['a', 'b', 'c']`.
+
+Read the [original RFC](https://github.com/emberjs/rfcs/blob/master/text/0318-array-helper.md) for more information.
 
 #### Deprecations (0)
 
